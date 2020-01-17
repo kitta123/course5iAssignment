@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FocusService } from '../focus.service';
+import { MatTableDataSource } from '@angular/material';
 
 
 @Component({
@@ -8,7 +9,13 @@ import { FocusService } from '../focus.service';
   styleUrls: ['./pricelist.component.scss']
 })
 export class PricelistComponent implements OnInit {
-  constructor(private focusService: FocusService) { }
+  dataSource:any;
+  constructor(private focusService: FocusService) {
+    
+   }
+
+   displayedColumns = ['id', 'ListPrice' ,'DollarsOff', 'NetPrice', 'Off', 'HarmonyCost', 'CostConcession', 'SpecialCost', 'Comments']
+  //  displayedColumns = ['ListPrice']
 
   ngOnInit() {
     this.PriceList();
