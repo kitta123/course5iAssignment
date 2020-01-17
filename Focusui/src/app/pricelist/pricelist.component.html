@@ -1,0 +1,35 @@
+<div class="row">
+      <div class="col-lg-12 ">
+        <h4>{{job_in}}</h4>
+           <table mat-table [dataSource]="data" class="width:100%" >
+            	<thead>
+                  <tr>
+                    <th>Id</th>
+                    <th>ListPrice</th>
+                    <th>DollarsOff</th>
+                    <th>NetPrice</th>
+                    <th>OFF</th>
+                    <th>HarmonyCost</th>
+                    <th>CostConcession</th>
+                    <th>SpecialCost</th>
+                    <th>Comments</th>
+                    </tr>
+                </thead>
+              <ng-container *ngFor="let value of data">
+                      <tbody>
+                      <tr (click)="value.expanded = !value.expanded">
+                        <td>{{value.id}}</td>
+                        <td>{{value.ListPrice }}</td>
+                        <td>{{value.DollarsOff }}</td>
+                        <td>{{value.NetPrice}}</td>
+                        <td>{{value.Off }}</td>
+                        <td>{{value.HarmonyCost}}</td>
+                        <td>{{value.CostConcession }}
+                        <td>{{value.SpecialCost}}</td>
+                        <td>{{value.Comments}}</td>
+                      </tr>
+                     </tbody>
+              </ng-container>
+          </table>
+      </div>
+  </div>
