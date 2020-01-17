@@ -29,14 +29,6 @@ class Post(db.Model):
         return f"POST('{self.id}','{self.ListPrice}','{self.DollarsOff}','{self.NetPrice}','{self.Off}','{self.HarmonyCost}','{self.CostConcession}','{self.SpecialCost}','{self.Comments}')"
 
 
-# class PostSchema(ma.Schema):
-#     class Meta:
-#         fields = ("id","ListPrice", "DollarsOff", "NetPrice","Off","HarmonyCost","CostConcession","SpecialCost","Comments")
-#
-#
-# post_schema = PostSchema()
-# posts_schema = PostSchema(many=True)
-
 @app.route("/postprice", methods=['GET','POST'])
 def PostListResource():
     if request.method == 'GET':
@@ -74,43 +66,6 @@ def PostListResource():
         db.session.add(new_post)
         db.session.commit()
         flash('Succefully post the data')
-
-
-# class GetResource(Resource):
-#     def get(self):
-#         post = Post.query.all()
-#         return post_schema.dump(post)
-
-    # def get(self):
-    #     post = Post.query.all()
-    #     return post_schema.dump(post)
-    # def patch(self, post_id):
-    #     post = Post.query.get_or_404(post_id)
-    #
-    #     if 'title' in request.json:
-    #         post.title = request.json['title']
-    #     if 'content' in request.json:
-    #         post.content = request.json['content']
-    #     if 'content' in request.json:
-    #         post.content = request.json['ListPrice']
-    #
-    #     db.session.commit()
-    #     return post_schema.dump(post)
-    #
-    # def delete(self, post_id):
-    #     post = Post.query.get_or_404(post_id)
-    #     post.delete()
-    #     db.session.commit()
-    #     return '', 204
-
-
-# @app.route('/getlist', methods = ['GET'])
-# def index():
-#     return jsonify({'price list': PostListResource.query.all()})
-
-# api.add_resource(PostListResource, '/postprice')
-# # api.add_resource(PostListResource, '/getlist')
-# api.add_resource(GetResource, '/getprice')
 
 
 if __name__ == '__main__':
