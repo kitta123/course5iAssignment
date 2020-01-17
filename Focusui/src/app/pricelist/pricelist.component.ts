@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FocusService } from '../focus.service';
 import { MatTableDataSource } from '@angular/material';
+// import  *  as  data  from  './data.json';
 
 
 @Component({
@@ -10,6 +11,8 @@ import { MatTableDataSource } from '@angular/material';
 })
 export class PricelistComponent implements OnInit {
   dataSource:any;
+  // products: any = (data as any).default;
+
   constructor(private focusService: FocusService) {
     
    }
@@ -18,6 +21,7 @@ export class PricelistComponent implements OnInit {
 
   ngOnInit() {
     this.PriceList();
+    // console.log(data);
   }
 
   data : any = [];
@@ -25,7 +29,7 @@ export class PricelistComponent implements OnInit {
     this.focusService.PriceList().subscribe(
       response =>{
           this.data=response;
-          console.log(this.data)
+          // console.log(this.data)
         }
     )}
 }
