@@ -15,7 +15,6 @@ export class PricelistComponent implements OnInit {
    }
 
    displayedColumns = ['id', 'ListPrice' ,'DollarsOff', 'NetPrice', 'Off', 'HarmonyCost', 'CostConcession', 'SpecialCost', 'Comments']
-  //  displayedColumns = ['ListPrice']
 
   ngOnInit() {
     this.PriceList();
