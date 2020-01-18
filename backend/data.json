@@ -1,0 +1,123 @@
+[
+    {
+        "Comments": "CND 250",
+        "CostConcession": "-",
+        "DollarsOff": "$2583.00",
+        "HarmonyCost": "$56.50",
+        "ListPrice": "$1255.00",
+        "NetPrice": "$3663.25",
+        "Off": "$963",
+        "SpecialCost": "-",
+        "id": 1
+    },
+    {
+        "Comments": "AUS 250",
+        "CostConcession": "-",
+        "DollarsOff": "$83.00",
+        "HarmonyCost": "$6.50",
+        "ListPrice": "$255.00",
+        "NetPrice": "$63.25",
+        "Off": "$356",
+        "SpecialCost": "-",
+        "id": 2
+    },
+    {
+        "Comments": "BAN 250",
+        "CostConcession": "-",
+        "DollarsOff": "$383.00",
+        "HarmonyCost": "$36.50",
+        "ListPrice": "$355.00",
+        "NetPrice": "$363.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 3
+    },
+    {
+        "Comments": "DEN 450",
+        "CostConcession": "-",
+        "DollarsOff": "$483.00",
+        "HarmonyCost": "$46.50",
+        "ListPrice": "$455.00",
+        "NetPrice": "$463.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 4
+    },
+    {
+        "Comments": "ENG 450",
+        "CostConcession": "-",
+        "DollarsOff": "$583.00",
+        "HarmonyCost": "$546.50",
+        "ListPrice": "$555.00",
+        "NetPrice": "$563.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 5
+    },
+    {
+        "Comments": "ENG 650",
+        "CostConcession": "-",
+        "DollarsOff": "$683.00",
+        "HarmonyCost": "$646.50",
+        "ListPrice": "$655.00",
+        "NetPrice": "$663.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 6
+    },
+    {
+        "Comments": "FRC 750",
+        "CostConcession": "-",
+        "DollarsOff": "$783.00",
+        "HarmonyCost": "$746.50",
+        "ListPrice": "$755.00",
+        "NetPrice": "$763.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 7
+    },
+    {
+        "Comments": "GRC 850",
+        "CostConcession": "-",
+        "DollarsOff": "$883.00",
+        "HarmonyCost": "$846.50",
+        "ListPrice": "$855.00",
+        "NetPrice": "$863.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 8
+    },
+    {
+        "Comments": "HOL 950",
+        "CostConcession": "-",
+        "DollarsOff": "$983.00",
+        "HarmonyCost": "$946.50",
+        "ListPrice": "$955.00",
+        "NetPrice": "$963.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 9
+    },
+    {
+        "Comments": "HOL 1050",
+        "CostConcession": "-",
+        "DollarsOff": "$1083.00",
+        "HarmonyCost": "$1046.50",
+        "ListPrice": "$1055.00",
+        "NetPrice": "$1063.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 10
+    },
+    {
+        "Comments": "JER 1150",
+        "CostConcession": "-",
+        "DollarsOff": "$1183.00",
+        "HarmonyCost": "$1146.50",
+        "ListPrice": "$1155.00",
+        "NetPrice": "$1163.25",
+        "Off": "-",
+        "SpecialCost": "-",
+        "id": 11
+    }
+]

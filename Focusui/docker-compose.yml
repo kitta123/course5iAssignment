@@ -1,12 +1,5 @@
 version: '2'
 services:
-  sandbox.web:
-    build:
-      context: .
-      args:
-        env: sandbox
-    ports:
-      - "8080:80"
   app.web:
     build:
       context: .
@@ -14,3 +7,10 @@ services:
         env: prod
     ports:
       - "8081:80"
+  app.web:
+    build:
+      contxt: .
+      args:
+        env:
+    ports:
+      - "5000:5000"

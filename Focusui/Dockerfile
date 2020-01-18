@@ -10,17 +10,17 @@ RUN apk update && apk add --no-cache make git
 # Move our files into directory name "app"
 WORKDIR /app
 COPY package.json package-lock.json  /app/
-RUN npm install @angular/cli@6.0.8 -g
+RUN npm install -g @angular/cli
 RUN cd /app && npm install
 COPY .  /app
 
 # Build with $env variable from outside
-RUN cd /app && npm run build:$env
+#RUN cd /app && npm run build:$env
 
 # Build a small nginx image with static website
 FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY --from=builder /app/dist /usr/share/nginx/html
+COPY --from=builder /app/dist/Focusui /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
